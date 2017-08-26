@@ -7,7 +7,7 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);
 body {
   background: #f7f7f9;
-  color: #4f585e;
+  color: #4f585e; /*! color titre carte*/
   padding-top: 54px;
   font-family: 'Source Sans Pro', sans-serif;
   text-rendering: optimizeLegibility;
@@ -26,7 +26,7 @@ body {
     margin-bottom: 30px;
 }
 a.btn {
-  background: #0096a0;
+  background: #496486; /*! color bouton sans action*/
   border-radius: 4px;
   box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
   color: #ffffff;
@@ -38,7 +38,7 @@ a.btn {
   transition: all 0.1s 0s ease-out;
 }
 .no-touch a.btn:hover {
-  background: #00a2ad;
+  background: #ff8000;
   box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
@@ -47,7 +47,7 @@ a.btn {
 }
 .no-touch a.btn:active,
 a.btn:active {
-  background: #008a93;
+  background: #ff8000;
   box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
   -webkit-transform: translate3d(0, 1px, 0);
           transform: translate3d(0, 1px, 0);
@@ -90,26 +90,7 @@ div.card div.card-title a.toggle-info {
   top: 10px;
   width: 32px;
 }
-div.card div.card-title a.toggle-info span {
-  background: #ffffff;
-  display: block;
-  height: 2px;
-  position: absolute;
-  top: 16px;
-  -webkit-transition: all 0.15s 0s ease-out;
-  transition: all 0.15s 0s ease-out;
-  width: 12px;
-}
-div.card div.card-title a.toggle-info span.left {
-  right: 14px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-div.card div.card-title a.toggle-info span.right {
-  left: 14px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
+
 div.card div.card-title h2 {
   font-size: 24px;
   font-weight: 700;
@@ -169,7 +150,7 @@ div.card.show {
           transform: scale(1) !important;
 }
 div.card.show div.card-title a.toggle-info {
-  background: #ff6666 !important;
+  background: #ff8000 !important;
 }
 div.card.show div.card-title a.toggle-info span {
   top: 15px;
