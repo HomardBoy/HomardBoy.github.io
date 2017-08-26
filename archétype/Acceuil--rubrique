@@ -1,0 +1,110 @@
+    <div class="container">
+
+        <div class="row" id="content">
+            <!-- occupe  9 colonnes sur 12 de la grille -->
+
+            <div class="col-md-12">
+
+                <h1>Titre Catégorie</h1>
+                <p class="lead">Description catégorie.</p>
+
+  <div class="cards">
+
+
+  <div class="card">
+    <img src="images/image.png">
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h4>
+          Titre Carte 1
+          <small>Sous titre carte 1</small>
+      </h4>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        Résumé carte
+
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="#" class="btn">Lire</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+---------------------------------------------------------------------------------------------------
+   
+  <div class="card">
+    <img src="images/image2.png">
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h4>
+          Titre Carte 2
+          <small>Sous titre carte 2</small>
+      </h4>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        Résumé carte
+
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="#" class="btn">Lire</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+---------------------------------------------------------------------------------------------------
+   
+  <div class="card">
+    <img src="images/image3.png">
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h4>
+          Titre Carte 3
+          <small>Sous titre carte 3</small>
+      </h4>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        Résumé carte
+
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="#" class="btn">Lire</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+---------------------------------------------------------------------------------------------------
+   
+
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a href="#" class="btn">Lire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
