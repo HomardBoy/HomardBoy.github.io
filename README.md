@@ -1,1 +1,1 @@
-# homardboy.guithub.io
+# HomardBoy.github.io
