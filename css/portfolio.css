@@ -18,6 +18,12 @@ body {
     }
 }
 
+.arrondie {
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border-radius:5px;
+}
+
 .portfolio-item {
     margin-bottom: 30px;
 }
@@ -59,7 +65,7 @@ div.card {
   background: #ffffff;
   display: inline-block;
   margin: 8px;
-  max-width: 300px;
+  max-width: 350px;
   -webkit-perspective: 1000;
           perspective: 1000;
   position: relative;
@@ -73,7 +79,7 @@ div.card img {
 }
 div.card div.card-title {
   background: #ffffff;
-  padding: 6px 15px 10px;
+  padding: 6px 10px 0px;
   position: relative;
   z-index: 0;
 }
