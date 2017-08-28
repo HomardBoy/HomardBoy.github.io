@@ -8,13 +8,13 @@
 body {
   background: #334455;
   color: #4f585e; /*! color titre carte*/
-  padding-top: 54px;
+  padding-top: 60px;
   font-family: 'Source Sans Pro', sans-serif;
   text-rendering: optimizeLegibility;
 }
 @media (min-width: 992px) {
     body {
-        padding-top: 70px;
+        padding-top: 75px;
 
     }
 }
@@ -23,7 +23,42 @@ body {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    border:2px solid white;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
 }
+
+.texte--sous-carte {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background: white; /*! color bouton sans action*/
+  border-radius: 16px;
+  margin-left: 9px;
+  margin-top: 9px;
+  margin-right: 168px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.card--2 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background: #334455; /*! color bouton sans action*/
+  border-radius: 16px;
+  margin-left: 7px;
+  margin-top: 10px;
+  margin-right: 172px;
+  text-decoration: none;
+  text-align: center;
+  border:2px solid white;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+}
+
+
+
 a {
   color: inherit;
   text-decoration: none;
@@ -32,15 +67,43 @@ a {
 .card__category {
   position: absolute;
   left: 0;
-  top: 160px;
+  top: 0px;
   height: 25px;
-  padding: 0 15px;
+  padding: 0 10px;
   background-color: black;
-  font-size: 20px;
-  color: #FFF;
+  font-size: 18px;
+  color: white;
+  line-height: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+.titre__noir {
+  position: absolute;
+  left: 0;
+  top: 158px;
+  right: 0px;
+  height: 40px;
+  padding: 7px 10px ;
+  background-color: black;
+  font-size: 23px;
+  color: white;
   line-height: 25px;
 }
 
+
+.no-touch .card__category:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+.no-touch .card__category:active,
+.card__category:active {
+  background-color: white;
+  color: white;
+  text-decoration: none;
+}
 
 
 /* On mouse-over, add a deeper shadow */
@@ -72,7 +135,50 @@ a.btn {
   text-decoration: none;
   -webkit-transition: all 0.1s 0s ease-out;
   transition: all 0.1s 0s ease-out;
+  text-align: center;
+
 }
+
+.btn2 {
+  background: #334455;
+  padding-left: 439px;
+  padding-right: 438px;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  border-radius: 4px;
+  color: #ffffff;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all 0.1s 0s ease-out;
+  transition: all 0.1s 0s ease-out;
+  text-align: center;
+  text-decoration: none;
+}
+
+.no-touch .btn2:hover {
+  background: #ff8000;
+  box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-transition: all 0.25s 0s ease-out;
+  transition: all 0.25s 0s ease-out;
+  color: white;
+  text-decoration:none;
+}
+
+.no-touch .btn2:active,
+.btn2:active {
+  background: #ff8000;
+  box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
+  -webkit-transform: translate3d(0, 1px, 0);
+          transform: translate3d(0, 1px, 0);
+  -webkit-transition: all 0.025s 0s ease-out;
+  transition: all 0.025s 0s ease-out;
+  color: white;
+  text-decoration:none;
+}
+
+
 .no-touch a.btn:hover {
   background: #ff8000;
   box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
@@ -80,6 +186,8 @@ a.btn {
           transform: translateY(-2px);
   -webkit-transition: all 0.25s 0s ease-out;
   transition: all 0.25s 0s ease-out;
+  text-align: center;
+
 }
 .no-touch a.btn:active,
 a.btn:active {
@@ -89,15 +197,18 @@ a.btn:active {
           transform: translate3d(0, 1px, 0);
   -webkit-transition: all 0.025s 0s ease-out;
   transition: all 0.025s 0s ease-out;
+  text-align: center;
+
 }
 
 div.card {
   background: #ffffff;
   display: inline-block;
   margin: 8px;
-  max-width: 350px;
+  max-width: 300px;
+  max-height: 500;
   -webkit-perspective: 1000;
-          perspective: 1000;
+  perspective: 1000;
   position: relative;
   text-align: left;
   -webkit-transition: all 0.3s 0s ease-in;
@@ -106,103 +217,4 @@ div.card {
 }
 div.card img {
   max-width: 300px;
-}
-div.card div.card-title {
-  background: #ffffff;
-  padding: 6px 10px 0px;
-  position: relative;
-  z-index: 0;
-}
-div.card div.card-title a.toggle-info {
-  border-radius: 32px;
-  height: 32px;
-  padding: 0;
-  position: absolute;
-  right: 15px;
-  top: 10px;
-  width: 32px;
-}
-
-div.card div.card-title h2 {
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  margin: 0;
-  padding: 0;
-}
-div.card div.card-title h2 small {
-  display: block;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: -0.025em;
-}
-div.card div.card-description {
-  padding: 0 15px 10px;
-  position: relative;
-  font-size: 14px;
-}
-div.card div.card-actions {
-  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
-  padding: 10px 15px 20px;
-  text-align: center;
-}
-div.card div.card-flap {
-  background: #d9d9d9;
-  position: absolute;
-  width: 100%;
-  -webkit-transform-origin: top;
-          transform-origin: top;
-  -webkit-transform: rotateX(-90deg);
-          transform: rotateX(-90deg);
-}
-div.card div.flap1 {
-  -webkit-transition: all 0.3s 0.3s ease-out;
-  transition: all 0.3s 0.3s ease-out;
-  z-index: -1;
-}
-div.card div.flap2 {
-  -webkit-transition: all 0.3s 0s ease-out;
-  transition: all 0.3s 0s ease-out;
-  z-index: -2;
-}
-div.cards.showing div.card {
-  cursor: pointer;
-  opacity: 0.6;
-  -webkit-transform: scale(0.88);
-          transform: scale(0.88);
-}
-.no-touch div.cards.showing div.card:hover {
-  opacity: 0.94;
-  -webkit-transform: scale(0.92);
-          transform: scale(0.92);
-}
-div.card.show {
-  opacity: 1 !important;
-  -webkit-transform: scale(1) !important;
-          transform: scale(1) !important;
-}
-div.card.show div.card-title a.toggle-info {
-  background: #ff8000 !important;
-}
-div.card.show div.card-title a.toggle-info span {
-  top: 15px;
-}
-div.card.show div.card-title a.toggle-info span.left {
-  right: 10px;
-}
-div.card.show div.card-title a.toggle-info span.right {
-  left: 10px;
-}
-div.card.show div.card-flap {
-  background: #ffffff;
-  -webkit-transform: rotateX(0deg);
-          transform: rotateX(0deg);
-}
-div.card.show div.flap1 {
-  -webkit-transition: all 0.3s 0s ease-out;
-  transition: all 0.3s 0s ease-out;
-}
-div.card.show div.flap2 {
-  -webkit-transition: all 0.3s 0.2s ease-out;
-  transition: all 0.3s 0.2s ease-out;
 }
