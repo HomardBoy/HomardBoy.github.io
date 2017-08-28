@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+    <title>Portfolio - Guillaume Orlando</title>
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/portfolio.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://use.fontawesome.com/6b924cb46d.js"></script>
+</head>
+
+  <style>
+    #headpage > div {
+      background-color: #000000;
+      height: 130px;
+    }
+
+    #img > div {
+      background-color: #f1f1f1;
+      height: 250px;
+    }
+
+    #texte > div {
+      background-color: #ffffff;
+      height: 1500px;
+    }
+
+    #footer > div {
+      background-color: #f1f1f1;
+      height: 170px;
+    }
+
+  </style>
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><i class="fa fa-pencil" aria-hidden="true"></i>  &nbsp;  &nbsp;Portfolio - Guillaume Orlando</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Accueil
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../pages/Cours1--Index.html">Cours 1ère année </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/Cours2--Index.html">Cours 2ème année</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/Stage--Index.html">Stage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Veille technologique</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recherches Personnelles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CV</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <br/>
+    <div class="container">
+        <div class="arrondie" id="headpage">
+          <div class="col-md-12">
+            </br>
+              <FONT color="white"><H1>SP1 - Installation d'un serveur DHCP sous Linux.</H1></FONT>
+              <FONT color="white"><p class="lead">Questions de cours et documentation.</p>
+
+
+          </div>
+        </div>
+</div>
+
+
+<div class="container">
+    <div class="arrondie" id="img">
+    <div class="col-md-12">
+
+      <!-- 1110x250 -->
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+    <div class="arrondie" id="texte">
+    <div class="col-md-12">
+
+      <br>
+      <FONT color="black"><H2>I - Le service DHCP</H2></FONT>
+      <FONT color="black"><p class="lead">
+          <FONT color="grey"><p class="lead">
+            <h5>
+                Question 1 : Quels sont les avantages et les inconvénients pour une organisation de mettre en place un serveur DHCP ?
+            </h5>
+          </FONT>
+          <div align="justify">
+
+          • L'avantage d'un serveur DHCP réside dans l'automatisation de la distribution d'adresse IP. Il n'est donc plus nécessaire de modifier manuellement les configurations des postes unes à unes.
+          Lorsqu'une modification des plages d'adresses sera nécessaire, une simple modification sur le serveur DHCP permettra de mettre à jour l'ensemble de l'adressage du réseau.
+          Les principaux inconvénients du DHCP résident dans l'augmentation des risques de conflits d'adresses entre les postes clients, et dans la trop haute dépendance des postes clients.
+        </br>Dans un contexte professionnel, la panne du serveur DHCP est capable de faire l'objet d'une immobilisation du réseau.
+
+      </div>
+      </p>
+
+      <FONT color="grey"><p class="lead">
+        <h5>
+            Question 2 : Quel protocole de transport est utilisé par le service DHCP ?
+        </h5>
+      </FONT>
+
+        • Un serveur DHCP utilise le protocole UDP.
+
+  </p>
+
+  <FONT color="grey"><p class="lead">
+    <h5>
+        Question 3 : Quel port est utilisé par le serveur DHCP ?
+    </h5>
+  </FONT>
+
+  • Côté serveur, le service DHCP utilise le port 68 par défaut.
+
+</p>
+
+<FONT color="grey"><p class="lead">
+  <h5>
+      Question 4 : Quel port est utilisé par le client DHCP ?
+  </h5>
+</FONT>
+
+• Côté client, le service DHCP utilise le port 67 par défaut.
+
+</p>
+
+<FONT color="grey"><p class="lead">
+  <h5>
+      Question 5 : Qu'est-ce qu'un bail DHCP ? Donnez l'utilitée d'un bail court et d'un bail long.
+  </h5>
+</FONT>
+  <div align="justify">
+
+• Un bail DHCP correspond à la durée d'attribution d'une adresse cliente (ou d'une plage d'adresse) par le serveur DHCP, avant son renouvellement.
+</br>Configurer un bail court est avantageux dans le cas ou un grand nombre de postes nécessitent une addresse IP.
+En effet, il faut alors renouveller rapidement les addresses pour éviter de surcharger les plages d'addresse avec des machines inutilisées.
+</br>A l'inverse, un bail de longue durée est utile pour un réseau de taille non variable, ou les risques de nouveaux arrivants sur le réseau sont limitées.
+
+</div>
+</p>
+
+<FONT color="grey"><p class="lead">
+  <h5>
+      Question 6 : Comment vérifier que le service DHCP est correctement configuré ?
+  </h5>
+</FONT>
+<div align="justify">
+
+• Pour vérifier qu'un serveur DHCP est opérationnel, il suffit de vérifier que celui-ci effectue correctement son travail.
+</br>Premièrement, un simple ipconfig/ifocnfig sur une machine cliente nous indique si le poste à reçu une adresse IP, et si cette addresse correspond à notre plan d'addressage.
+Un ping vers l'exterieur du réseau doit égallement avoir un résultat positif. Celui-ci confirme que les choix d'IP sont judicieux.
+</br>Enfin, s'il faut vérifier le nom du serveur DHCP, la commande hostname nous le retournera.
+
+
+</div>
+</p>
+
+      <FONT color="black"><H2>II - Installation d'un serveur DHCP</H2></FONT>
+      <FONT color="black"><p class="lead">
+
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+      </p>
+      <FONT color="black"><H2>III - Configuration d'un serveur DHCP</H2></FONT>
+      <FONT color="black"><p class="lead">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+      </p>
+      <FONT color="black"><H2>[Conclusion]</H2></FONT>
+      <FONT color="black"><p class="lead">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing.
+      </p>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+    <div class="arrondie" id="footer">
+    <div class="col-md-12">
+
+      <br>
+      <p>
+        <i class="fa fa-file" aria-hidden="true"></i> &nbsp; <b> Documents complémetaires : </b>
+          <a href="#">Maquette packet tracer</a>
+          ,
+          &nbsp;<a href="#">Situation professionnelle</a>
+          ,
+          &nbsp;<a href="#">Document machin</a>
+
+      </br>
+      <i class="fa fa-tags" aria-hidden="true"></i>&nbsp; <b> Tags : </b> &nbsp; <a href="#"> <FONT color="red"> [SISR1] </a>
+        &nbsp;&nbsp;<a href="#"> <FONT color="green"> [SISR2] </a>
+        &nbsp;&nbsp;<a href="#"> <FONT color="purple"> [SI2] </a>
+      </br>
+       <FONT color="black"> <i class="fa fa-user" aria-hidden="true"></i> &nbsp; <b> Auteur : </b> <a href="#"> Guillaume Orlando </a>
+      </br>
+        <i class="fa fa-clock-o" aria-hidden="true"></i> &nbsp; <b> Date : </b> dim.27 août 2017
+      </br>
+      <i href="#" class="fa fa-download" aria-hidden="true"></i> <a href="#"> &nbsp; Format PDF </a>
+
+
+
+      </p>
+
+
+    </div>
+  </div>
+</div>
+
+
+</div>
+</div>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+  <script src="js/index.js"></script>
+
+
+
+
+    </div>
+
+    <footer class="py-3 bg-dark">
+      <div class="container">
+        <p class="m-0 text-centertext-white"></p>
+
+        <a href="#" class="inline"><FONT color="white"><h5>Me contacter</h5></a>
+      </div>
+
+</footer>
+
+
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/popper/popper.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
