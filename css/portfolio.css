@@ -24,6 +24,24 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card__category {
+  position: absolute;
+  left: 0;
+  top: 160px;
+  height: 25px;
+  padding: 0 15px;
+  background-color: black;
+  font-size: 20px;
+  color: #FFF;
+  line-height: 25px;
+}
+
+
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
