@@ -1,0 +1,113 @@
+.white_box{
+  height: 1250px;
+  width: 1120px;
+  background-color: white;
+}
+
+.left_box{
+  height: 1250px;
+  background-color: #E7E7E7;
+  width: 350px;
+  float: left;
+}
+
+.right_box{
+  box-shadow: 0px 0px 5px;
+  height: 1250px;
+  width: 766px;
+  float: right;
+}
+
+.name_box{
+  height: 100px;
+  width: 300px;
+  margin-left: 25px;
+  margin-top: 25px;
+  font-size: 40px;
+  color: #4a869f;
+  line-height: 38px;
+}
+
+.contact1{
+  color: #4a869f;
+  height: 28px;
+  width: 300px;
+  margin-top: 100px;
+  margin-left: 10px;
+  font-size: 21px;
+}
+
+.contact2{
+  color: #4a869f;
+  height: 35px;
+  width: 350px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.interest_box{
+  color: black;
+  height: 60px;
+  width: 120px;
+  margin-left: 13px;
+  margin-top: 50px;
+  font-size: 35px;
+  float: left;
+}
+
+.underscore{
+  color: black;
+  height: 60px;
+  width: 200px;
+  float: right;
+  font-size: 35px;
+  margin-top: 38px;
+}
+
+.interest{
+  height: 280px;
+  width: auto;
+  margin-top: 120px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.progres_box{
+  background-color: #9aa0a3;
+  border-radius: 4px;
+  height: 23px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.progres{
+  background-color: #4a869f;
+  border-radius: 4px;
+  height: 23px;
+  margin-right: 10px;
+}
+
+#secu{
+    width: 260px;
+}
+
+#progra{
+  width: 210px;
+}
+
+#crea{
+  width: 230px;
+}
+
+#hard{
+  width: 180px;
+}
+
+#second {
+  margin-left: 10px;
+  padding-left: 40px;
+
+}
