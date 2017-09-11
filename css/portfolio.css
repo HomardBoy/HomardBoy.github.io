@@ -20,7 +20,6 @@ body {
 }
 
 
-
 .card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -85,13 +84,14 @@ a {
   left: 0;
   top: 158px;
   right: 0px;
-  height: 40px;
+  height: 65px;
   padding: 7px 10px ;
   background-color: black;
   font-size: 23px;
   color: white;
   line-height: 25px;
 }
+
 
 
 .no-touch .card__category:hover {
@@ -124,6 +124,11 @@ a {
 
 .pagination {
     margin-bottom: 30px;
+}
+
+.images{
+position: relative;
+width:1000px;
 }
 a.btn {
   background: #334455; /*! color bouton sans action*/

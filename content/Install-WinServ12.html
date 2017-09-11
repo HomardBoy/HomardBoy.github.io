@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+    <title>Portfolio - Guillaume Orlando</title>
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/portfolio.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://use.fontawesome.com/6b924cb46d.js"></script>
+</head>
+
+  <style>
+    #headpage > div {
+      background-color: #000000;
+      height: 130px;
+    }
+
+    #img > div {
+      background-color: #f1f1f1;
+      height: 250px;
+    }
+
+    #texte > div {
+      background-color: #ffffff;
+      height: 5535px;
+    }
+
+    #footer > div {
+      background-color: #f1f1f1;
+      height: 165px;
+      width: 1120px;
+      right: -10px;
+      position: relative;
+      margin-top: 5px;
+
+      padding-left: 30px;
+      margin-left: -10px;
+
+    }
+
+  </style>
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><i class="fa fa-pencil" aria-hidden="true"></i>  &nbsp;  &nbsp;Portfolio - Guillaume Orlando</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Accueil
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../pages/Cours1--Index.html">Cours 1ère année </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/Cours2--Index.html">Cours 2ème année</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/Stage--Index.html">Stage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Veille technologique</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recherches Personnelles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CV</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <br/>
+    <div class="container">
+        <div class="arrondie" id="headpage">
+          <div class="col-md-12">
+            </br>
+              <FONT color="white"><H1>Documentation</H1></FONT>
+              <FONT color="white"><p class="lead"> Procédure d’installation d’une machine Windows Server 2012 (R2)</p>
+
+
+          </div>
+        </div>
+</div>
+
+
+<div class="container">
+    <div class="arrondie" id="img">
+    <div class="col-md-12">
+
+      <img src="../images/WinServBannier.jpg" alt="Bannière Windows Server 2012" style="width:1090px;height:250px;" >
+      <!-- 1110x250 -->
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+    <div class="arrondie" id="texte">
+    <div class="col-md-12">
+
+      <br>
+      <FONT color="black"><H2>I - Prerequis.</H2></FONT>
+      <FONT color="#4d4d4d"><p class="lead">
+
+          <div align="justify">
+          <div class="texte-desc">
+
+          • L’installation d’un Serveur Windows 2012 doit se préparer dans un premier temps au niveau hardware. Deux options s’offrent à nous, à savoir une installation sur machine virtuelle ou sur machine dédiée. Dans les deux cas, il faut respecter la configuration d’au moins 35 Go d’espace disque libre et de 4 Go de mémoire vive. En dessous d’une tel configuration, l'expérience de configuration des services risque d’être difficile et la machine risque d’avoir un temps de réaction trop long. Un ISO du système d’exploitation est également nécessaire. Pour une VM, la simple présence du fichier sur la machine est obligatoire. Pour un serveur physiquement dédié, l’ISO doit être brûlé sur une clé USB bootable ou sur un CD d’installation. La possession d’une clé d’activation correspondant à la version de l’OS est également nécessaire.
+          Dans le cas suivant, la configuration se fera sur une machine virtuelle Vmware Workstation Pro 12, mais le processus reste identique peut importe le logiciel de virtualisation ou la machine dont il est question.
+        </div>
+
+        <br>
+        <FONT color="black"><H2>I - Installation.</H2></FONT>
+        <FONT color="#4d4d4d"><p class="lead">
+
+          <div align="justify">
+          <div class="texte-desc">
+
+          • La première des étapes consiste à créer une nouvelle machine virtuelle et à indiquer l’emplacement du fichier ISO.
+          La suite de la configuration est classique, à savoir indiquer le nom de la machine, l’emplacement des fichiers sur la machine hôte, l’espace disque, le mode d’attribution de l’espace disque et les capacités de la machine en terme de processeur et de mémoire vive.
+
+          <br>
+          <br>
+          <div class="images">
+          <img src="../images/InstallW/1.png">
+          <br>
+          <br>
+        </div>
+          • Une fois la machine initialisée, nous pouvons l’allumer pour la première fois. Après quelques secondes de chargement, l’assistant d’installation s’ouvre. Celui-ci va commencer par nous interroger sur le choix de la langue et la disposition du clavier. Nous laissons les choix sur langue française et clavier français. Le prochain panneau de l’assistant est important, puisqu’il permet de choisir le type d’OS à installer. Les différentes versions de Windows Server 2012 seront listés (Datacenter, Foundation, Standard ou encore Essentials), avec le choix d’une interface graphique ou en ligne de commandes pour chacuns d’eux.
+Dans le cas présent, nous indiquons que l’installation concerne un Windows Server 2012 RS Standard avec interface graphique.
+  <br>
+  <br>
+  <div class="images">
+          <img src="../images/InstallW/2.png" style="width:1000px;">
+<br><br>
+</div>
+
+• La prochaine étape consiste à choisir le type d’installation et l’emplacement de cette dernière. Nous indiquons que l’installation sera personnalisé, et nous sélectionnons l’unique disque virtuel disponible.
+<br>
+<br>
+<div class="images">
+        <img src="../images/InstallW/3.png" style="width:1000px;">
+<br><br>
+</div>
+
+• L’installation va ensuite débuter d’elle même et prendre un certain temps avec de se terminer. La machine est susceptible de redémarrer pendant l’installation. Une fois l’installation effectuée à 100%, la machine va se lancer d’elle même, et nous proposer de définir les options d’authentification pour le compte administrateur de la machine.
+
+<br>
+<br>
+<div class="images">
+      <img src="../images/InstallW/4.png" style="width:1000px;">
+<br><br>
+</div>
+• La machine va redémarrer une dernière fois avant de nous laisser le soin de s’authentifier pour la première fois sur le système, avec le mot de passe définit quelques instants auparavant.
+
+
+
+
+        </div>
+
+    </div>
+
+    <br>
+    <FONT color="black"><H2>III - Configuration de base.</H2></FONT>
+    <FONT color="#4d4d4d"><p class="lead">
+
+      <div align="justify">
+      <div class="texte-desc">
+        • La machine est maintenant officiellement installée, et nous avons accès au bureau, au tableau de bord du serveur, et à toutes les fonctionnalités possibles.
+Avant de commencer à installer des services spécifiques, il reste deux étapes cruciales : la configuration réseau et la configuration du nom netbios.
+La configuration réseau s’effectue au sein du centre réseau et partage, dans les propriétés de la carte réseau, sous l’onglet Protocole Internet version 4 (TCP/IPv4). Etant donné que le serveur risque d’avoir une adresse IP fixe, c’est le moment de l’indiquer.
+<br>
+<br>
+<div class="images">
+        <img src="../images/InstallW/5.png" style="width:1000px;">
+<br><br>
+</div>
+
+  • Enfin, le nom netbios doit être modifié. Celui-ci est une suite de caractères alphanumériques aléatoire par défaut, ce qui risque de causer des conflits avec certains services. Pour le changer, rendons-nous sur le tableau de bord, dans l’onglet “Serveur local”, en face de la ligne “Nom de l’ordinateur”. En cliquant sur le nom actuel de la machine, une fenêtre nous proposera de modifier le nom netbios.
+<br>
+<br>
+<div class="images">
+        <img src="../images/InstallW/6.png" style="width:1000px;">
+<br><br>
+</div>
+
+  • Pour que les paramètres netbios soient à jour, un redémarrage sera nécessaire pour continuer.
+
+Pour terminer, si le serveur a besoin d'accueillir des logiciels tiers provenant d’internet, ou qu’il est nécessaire de naviguer sur Internet Explorer pour une raison ou une autre, il est plus commode de désactiver temporairement les protections de ce dernier.
+Pour ce faire, rendons-nous encore une fois dans les paramètres du serveur local sur le tableau de bord. La ligne à identifier se nomme “Configuration de sécurité renforcée d’internet explorer”. Par défaut, celle-ci est paramétré sur “Activé”. Il suffit de la passer en mode “inactif”.
+<br>
+<br>
+<div class="images">
+        <img src="../images/InstallW/7.png">
+<br><br>
+</div>
+
+  • Il reste enfin à ouvrir internet explorer, dans l’onglet des paramètres, sous “Sécurité”, et d’abaisser le niveau de sécurité pour internet.
+
+<br>
+<br>
+<div class="images">
+        <img src="../images/InstallW/8.png">
+<br><br>
+</div>
+
+  • Attention tout de même aux conséquences de tels modifications sur un serveur en production.
+<br>
+
+Et voilà, le serveur est maintenant prêt à accueillir différents services !
+
+
+
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+    <div class="arrondie" id="footer">
+    <div class="col-md-12">
+
+      <br>
+      <p>
+        <i class="fa fa-file" aria-hidden="true"></i> &nbsp; <b> Documents complémetaires : </b>
+
+
+      </br>
+      <i class="fa fa-tags" aria-hidden="true"></i>&nbsp; <b> Tags : </b> &nbsp; <a href="#"> <FONT color="red"> [SISR2] </a>
+        &nbsp;&nbsp;<a href="#"> <FONT color="green"> [SISR4] </a>
+        &nbsp;&nbsp;<a href="#"> <FONT color="purple"> [SI2] </a>
+      </br>
+       <FONT color="black"> <i class="fa fa-user" aria-hidden="true"></i> &nbsp; <b> Auteur : </b> <a href="#"> Guillaume Orlando </a>
+      </br>
+        <i class="fa fa-clock-o" aria-hidden="true"></i> &nbsp; <b> Date : </b> lun.11 septembre 2017
+      </br>
+      <i href="#" class="fa fa-download" aria-hidden="true"></i> <a href="#"> &nbsp; Format PDF </a>
+
+
+
+      </p>
+
+
+    </div>
+  </div>
+
+
+
+</div>
+</div>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+  <script src="js/index.js"></script>
+
+
+
+
+    </div>
+
+    <footer class="py-3 bg-dark">
+      <div class="container">
+        <p class="m-0 text-centertext-white"></p>
+
+        <a href="#" class="inline"><FONT color="white"><h5>Me contacter</h5></a>
+      </div>
+
+</footer>
+
+
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/popper/popper.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
