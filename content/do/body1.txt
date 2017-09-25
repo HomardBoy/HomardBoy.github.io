@@ -1,0 +1,17 @@
+</div>
+        </div>
+</div>
+
+
+<div class="container">
+    <div class="arrondie" id="img">
+    <div class="col-md-12">
+
+      <img src="../images/WinServBannier.jpg" alt="Bannière Windows Server 2012" style="width:1090px;height:250px;" >
+      <!-- 1110x250 -->
+
+    </div>
+  </div>
+</div>
+
+

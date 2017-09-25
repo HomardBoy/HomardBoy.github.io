@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+    <title>Portfolio - Guillaume Orlando</title>
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/portfolio.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://use.fontawesome.com/6b924cb46d.js"></script>
+</head>
+
+  <style>
+    #headpage > div {
+      background-color: #000000;
+      height: 130px;
+    }
+
+    #img > div {
+      background-color: #f1f1f1;
+      height: 250px;
+    }
+
+    #texte > div {
+      background-color: #ffffff;
+      height: 5535px;
+    }
+
+    #footer > div {
+      background-color: #f1f1f1;
+      height: 165px;
+      width: 1120px;
+      right: -10px;
+      position: relative;
+      margin-top: 5px;
+
+      padding-left: 30px;
+      margin-left: -10px;
+
+    }
+
+  </style>
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><i class="fa fa-pencil" aria-hidden="true"></i>  &nbsp;  &nbsp;Portfolio - Guillaume Orlando</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Accueil
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../pages/Cours1--Index.html">Cours 1ère année </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/Cours2--Index.html">Cours 2ème année</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/Stage--Index.html">Stage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Veille technologique</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recherches Personnelles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CV</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <br/>
+    <div class="container">
+        <div class="arrondie" id="headpage">
+          <div class="col-md-12">
+            </br>
+              <FONT color="white"><H1>Documentation</H1></FONT>
+              <FONT color="white"><p class="lead"> Procédure d’installation du service AD DS sur une machine Windows Server 2012 (R2)</p>
+
+
+          </div>
+        </div>
+</div>
+
+
+<div class="container">
+    <div class="arrondie" id="img">
+    <div class="col-md-12">
+
+      <img src="../images/WinServBannier.jpg" alt="Bannière Windows Server 2012" style="width:1090px;height:250px;" >
+      <!-- 1110x250 -->
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+    <div class="arrondie" id="texte">
+    <div class="col-md-12">
+
+      <br>
+      <FONT color="black"><H2>I - Prerequis.</H2></FONT>
+      <FONT color="#4d4d4d"><p class="lead">
+
+          <div align="justify">
+          <div class="texte-desc">
+
+          • Avant d’installer le service Active Directory, il faut disposer d’une machine Windows Server correctement installé, ayant une connexion internet, une adresse IP fixe, et dont le nom netbios a été modifié. En cas de doutes, voir la documentation relative à l’installation et à la configuration initial d’un serveur windows 2012.
+Sur Windows Server, l’installation de l’AD se fait conjointement avec celle du service de résolution de noms (DNS ou Domain Name System). Il n’est donc pas obligatoire d’installer les deux services séparéments.
+
+        </div>
+
+        <br>
+        <FONT color="black"><H2>I - Installation des services.</H2></FONT>
+        <FONT color="#4d4d4d"><p class="lead">
+
+          <div align="justify">
+          <div class="texte-desc">
+
+          • Pour installer de nouvelles fonctionnalités sur le serveurs, rendons-nous sur le tableau de bord, dans l’onglet “Gérer” puis “Ajouter des rôles et des fonctionnalités”.
+Un assistant d’installation de services va s’ouvrir, et nous proposer une installation basée sur des rôles ou des fonctionnalités. Nous avançons dans l’assistant interactif jusqu’à obtenir la liste des différents services disponibles. Ici, nous sélectionnons uniquement la ligne “Services AD DS”.
+
+
+          <br>
+          <br>
+          <div class="images">
+          <img src="../images/InstallW/1.png">
+          <br>
+          <br>
+        </div>
+          •  Le prochain panneau nous invite à choisir des fonctionnalités. N’en ayant pas besoin, nous pouvons passer les panneaux jusqu’à atteindre la confirmation d’installation des services. Si tout est en ordre, nous pouvons continuer en démarrant l’installation. Celle-ci va prendre un certain temps avant de se terminer, et le serveur est susceptible de redémarrer ou de demander une autorisation avant de redémarrer.
+Le service étant maintenant correctement installé, nous continuons avec la phase de configuration.
+
+
+
+        </div>
+
+    </div>
+
+    <br>
+    <FONT color="black"><H2>III - Installation et configuration du service DNS.</H2></FONT>
+    <FONT color="#4d4d4d"><p class="lead">
+
+      <div align="justify">
+      <div class="texte-desc">
+        • La machine est maintenant officiellement installée, et nous avons accès au bureau, au tableau de bord du serveur, et à toutes les fonctionnalités possibles.
+Avant de commencer à installer des services spécifiques, il reste deux étapes cruciales : la configuration réseau et la configuration du nom netbios.
+La configuration réseau s’effectue au sein du centre réseau et partage, dans les propriétés de la carte réseau, sous l’onglet Protocole Internet version 4 (TCP/IPv4). Etant donné que le serveur risque d’avoir une adresse IP fixe, c’est le moment de l’indiquer.
+<br>
+<br>
+<div class="images">
+        <img src="../images/InstallW/5.png" style="width:1000px;">
+<br><br>
+</div>
+
+  • Enfin, le nom netbios doit être modifié. Celui-ci est une suite de caractères alphanumériques aléatoire par défaut, ce qui risque de causer des conflits avec certains services. Pour le changer, rendons-nous sur le tableau de bord, dans l’onglet “Serveur local”, en face de la ligne “Nom de l’ordinateur”. En cliquant sur le nom actuel de la machine, une fenêtre nous proposera de modifier le nom netbios.
+<br>
+<br>
+<div class="images">
+        <img src="../images/InstallW/6.png" style="width:1000px;">
+<br><br>
+</div>
+
+  • Pour que les paramètres netbios soient à jour, un redémarrage sera nécessaire pour continuer.
+
+Pour terminer, si le serveur a besoin d'accueillir des logiciels tiers provenant d’internet, ou qu’il est nécessaire de naviguer sur Internet Explorer pour une raison ou une autre, il est plus commode de désactiver temporairement les protections de ce dernier.
+Pour ce faire, rendons-nous encore une fois dans les paramètres du serveur local sur le tableau de bord. La ligne à identifier se nomme “Configuration de sécurité renforcée d’internet explorer”. Par défaut, celle-ci est paramétré sur “Activé”. Il suffit de la passer en mode “inactif”.
+<br>
+<br>
+<div class="images">
+        <img src="../images/InstallW/7.png">
+<br><br>
+</div>
+
+  • Il reste enfin à ouvrir internet explorer, dans l’onglet des paramètres, sous “Sécurité”, et d’abaisser le niveau de sécurité pour internet.
+
+<br>
+<br>
+<div class="images">
+        <img src="../images/InstallW/8.png">
+<br><br>
+</div>
+
+  • Attention tout de même aux conséquences de tels modifications sur un serveur en production.
+<br>
+
+Et voilà, le serveur est maintenant prêt à accueillir différents services !
+
+
+
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+    <div class="arrondie" id="footer">
+    <div class="col-md-12">
+
+      <br>
+      <p>
+        <i class="fa fa-file" aria-hidden="true"></i> &nbsp; <b> Documents complémetaires : </b>
+
+
+      </br>
+      <i class="fa fa-tags" aria-hidden="true"></i>&nbsp; <b> Tags : </b> &nbsp; <a href="#"> <FONT color="red"> [SISR2] </a>
+        &nbsp;&nbsp;<a href="#"> <FONT color="green"> [SISR4] </a>
+        &nbsp;&nbsp;<a href="#"> <FONT color="purple"> [SI2] </a>
+      </br>
+       <FONT color="black"> <i class="fa fa-user" aria-hidden="true"></i> &nbsp; <b> Auteur : </b> <a href="#"> Guillaume Orlando </a>
+      </br>
+        <i class="fa fa-clock-o" aria-hidden="true"></i> &nbsp; <b> Date : </b> lun.11 septembre 2017
+      </br>
+      <i href="#" class="fa fa-download" aria-hidden="true"></i> <a href="#"> &nbsp; Format PDF </a>
+
+
+
+      </p>
+
+
+    </div>
+  </div>
+
+
+
+</div>
+</div>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+  <script src="js/index.js"></script>
+
+
+
+
+    </div>
+
+    <footer class="py-3 bg-dark">
+      <div class="container">
+        <p class="m-0 text-centertext-white"></p>
+
+        <a href="#" class="inline"><FONT color="white"><h5>Me contacter</h5></a>
+      </div>
+
+</footer>
+
+
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/popper/popper.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
