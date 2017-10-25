@@ -21,7 +21,7 @@ body {
 
 .zonetexte{
   position: absolute;
-  height: 103px;
+  height: 127px;
   width: 296px;
   margin-top: 65px;
   margin-left: -10px;
@@ -38,8 +38,8 @@ body {
     -moz-border-radius:2px;
     -webkit-border-radius:2px;
     border-radius:2px;
-    min-height: 310px;
-    max-height: 310px;
+    min-height: 334px;
+    max-height: 334px;
 
 }
 
