@@ -19,15 +19,28 @@ body {
     }
 }
 
+.zonetexte{
+  position: absolute;
+  height: 103px;
+  width: 296px;
+  margin-top: 65px;
+  margin-left: -10px;
+  background-color: #c6ced6;
+  padding-left: 5px;
+  padding-top: 3px;
+}
 
 .card {
     /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position: absolute;
     transition: 0.3s;
     border:2px solid white;
     -moz-border-radius:2px;
     -webkit-border-radius:2px;
     border-radius:2px;
+    min-height: 310px;
+    max-height: 310px;
+
 }
 
 .texte--sous-carte {
@@ -82,7 +95,7 @@ a {
 .titre__noir {
   position: absolute;
   left: 0;
-  top: 158px;
+  top: 135px;
   right: 0px;
   height: 65px;
   padding: 7px 10px ;
@@ -91,6 +104,7 @@ a {
   color: white;
   line-height: 25px;
 }
+
 
 
 
