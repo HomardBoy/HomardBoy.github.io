@@ -19,6 +19,17 @@ body {
     }
 }
 
+.imgstage{position: absolute; margin-top: 7px;}
+#stage1{height: 240px;}
+#stage1-2{height: 234px;}
+#stage1-3{
+  position: absolute;
+  margin-left: 325px;
+  font-size: 18px;
+  font-weight: 300;
+  width: 590px;
+  text-align: justify
+}
 
 .bandeaunoir{
   position: absolute;
