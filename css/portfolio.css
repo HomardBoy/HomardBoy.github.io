@@ -76,6 +76,28 @@ border-radius: 10px 10px 0px 0px;
 background:#6163d3;
 }
 
+#veille1{
+position: relative;
+width:938px;
+height:6px;
+margin-left: -8px;
+border-radius: 10px 10px 0px 0px;
+background:#a035c4;
+}
+
+#itil{
+position: relative;
+width:938px;
+height:6px;
+margin-left: -8px;
+border-radius: 10px 10px 0px 0px;
+background:#35c437;
+}
+
+#gemalto:hover {
+    box-shadow: 0 17px 30px 0 rgba(0,0,0,0.5);
+}
+
 #kazeko{
 position: relative;
 width:938px;
@@ -257,8 +279,10 @@ a {
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 17px 30px 0 rgba(0,0,0,0.5);
 }
+
+
 
 .container {
     padding: 2px 10px;
