@@ -1,155 +1,133 @@
 <!DOCTYPE html>
 <html >
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio - Guillaume Orlando</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
-  
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+    <title>Portfolio - Guillaume Orlando</title>
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/portfolio.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/timeline.css">
+    <script src="https://use.fontawesome.com/6b924cb46d.js"></script>
 
-      <link rel="stylesheet" href="../css/style.css">
-
-  
 </head>
+
+  <style>
+    #content > div {
+      background-color: #f2f6fc;
+    }
+
+  </style>
+
+  <!-- IMGE 680 x 400 -->
 
 <body>
 
- 
- <center style="font-family: 'Roboto'; padding-top: 50px; font-size: 26px;"> Timeline des évènements relatifs à ma veille technologique :</center>
-  <section class="timeline">
-  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <div class="timeline-item">
-        <div class="timeline-img"></div>
-
-        <div class="timeline-content js--fadeInLeft">
-          <h2>Fuite d'outils offensifs de la NSA</h2>
-       		<div class="date">14 Avril 2017</div>
-          <p> Fuite de plusieurs exploits, codes, et outils d'exploitations de l'Equation Group (Groupe de cyber-espionnage de la NSA) par les Shadowbrokers. Avec notament une divulgation de l'exploit SMB EternalBlue (MS17-010) et DoublePulsar (CVE-2017-0143).</p>
-          <a class="bnt-more" href="https://www.rapid7.com/db/modules/auxiliary/scanner/smb/smb_ms17_010#" target="_blank">Vulnerability & Exploit Database</a>
-          <a class="bnt-more" href="https://www.cvedetails.com/cve/cve-2017-0143" target="_blank">CVE Details</a>
-          <a class="bnt-more" href="https://github.com/misterch0c/shadowbroker" target="_blank">Leak complet</a>
-          <a class="bnt-more" href="https://thehackernews.com/2017/04/swift-banking-hacking-tool.html" target="_blank">Article</a>
+      <a class="navbar-brand" href="../index.html"><i class="fa fa-pencil" aria-hidden="true"></i>  &nbsp;  &nbsp;Portfolio - Guillaume Orlando</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li>
+              <a class="nav-link" href="../index.html">Accueil
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cours1.html">Cours 1ère année </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cours 2ème année</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stage2.html">Stage</a>
+            </li>
+            <li class="nav-item  active">
+              <a class="nav-link" href="epreuves.html">Gestion du patrimoine</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recherches.html">Recherches personnelles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cv.html">CV</a>
+            </li>
+          </ul>
         </div>
-      </div> 
-      
-      <div class="timeline-item">
+      </div>
+    </nav>
 
-        <div class="timeline-img"></div>
-        <div class="timeline-content timeline-card js--fadeInRight">
-        	<div class="timeline-img-header">
-            <div class="img_card_t"></div>
-          	<h2>WannaCry Ransomware</h2>
-        	</div>
-        	<div class="date">12 MAI 2017</div>
-          <p>Première infection d'une machine par le ransomware WannaCry, qui utilise une vulnérabilité du service SMB (Server Message Block protocol - dossiers et imprimantes partagés) de Windows comme vecteur d'infection. Le ransomware utilise l'exploits EternalBlue divulgués quelques dizaines de jours plus tôt. Après avoir chiffré l'entièretée des données utilisateurs, le ransomware demande une rançon en bitcoin en échange de la clé de déchiffrement.</p>
-          <a class="bnt-more" href="https://blog.barkly.com/wannacry-ransomware-statistics-2017" target="_blank">Statistiques d'infections</a>
-          <a class="bnt-more" href="https://logrhythm.com/blog/a-technical-analysis-of-wannacry-ransomware/" target="_blank">Analyse technique</a>
-          <a class="bnt-more" href="https://github.com/Hackstar7/WanaCry" target="_blank">Proof Of Concept</a>
-          <a class="bnt-more" href="http://www.wired.co.uk/article/wannacry-ransomware-virus-patch" target="_blank">Article</a>
-        </div>
-
-      </div>   
-      
-      <div class="timeline-item">
-
-        <div class="timeline-img"></div>
-
-        <div class="timeline-content js--fadeInLeft">
-        	<div class="date">3 JUN 2016</div>
-          <h2>Quote</h2>
-          <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
-        </div>
-      </div>   
-      
-      <div class="timeline-item">
-
-        <div class="timeline-img"></div>
-
-        <div class="timeline-content js--fadeInRight">
-        	<h2>Title</h2>
-        	<div class="date">22 JUN 2016</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-          <a class="bnt-more" href="javascript:void(0)">More</a>
-        </div>
-      </div>   
-      
-      <div class="timeline-item">
-
-        <div class="timeline-img"></div>
-
-        <div class="timeline-content timeline-card js--fadeInLeft">
-        	<div class="timeline-img-header"> 
-          	<h2>Card Title</h2>
-        	</div>
-        	<div class="date">10 JULY 2016</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-          <a class="bnt-more" href="javascript:void(0)">More</a>
-        </div>
-      </div>   
-
-      <div class="timeline-item">
-
-        <div class="timeline-img"></div>
-
-        <div class="timeline-content timeline-card js--fadeInRight">
-        	<div class="timeline-img-header">
-          	<h2>Card Title</h2>
-        	</div>
-        	<div class="date">30 JULY 2016</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-          <a class="bnt-more" href="javascript:void(0)">More</a>
-        </div>
-      </div>  
-      
-      <div class="timeline-item">
-
-        <div class="timeline-img"></div>
-
-        <div class="timeline-content js--fadeInLeft">
-        	<div class="date">5 AUG 2016</div>
-          <h2>Quote</h2>
-          <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
-        </div>
-      </div>   
-
-      <div class="timeline-item">
-
-        <div class="timeline-img"></div>
-
-        <div class="timeline-content timeline-card js--fadeInRight">
-        	<div class="timeline-img-header">
-          	<h2>Card Title</h2>
-        	</div>
-        	<div class="date">19 AUG 2016</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-          <a class="bnt-more" href="javascript:void(0)">More</a>
-        </div>
-      </div>  
-      
-      <div class="timeline-item">
-
-        <div class="timeline-img"></div>
-
-        <div class="timeline-content js--fadeInLeft">
-        	<div class="date">1 SEP 2016</div>
-          <h2>Title</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-          <a class="bnt-more" href="javascript:void(0)">More</a>
-        </div>
-      </div>   
-
-      
-          
+<div class="timeline">
+  <div class="event_point"></div>
+  <div class="carda">
+    <div class="date"> 14 Avril 2017 </div>
+    <div class="titre"> Fuite d'outils offensifs de la NSA </div>
+    <div class="photo"> <img src="../images/InstallW/nsa.jpg" alt="Smiley face"> </div>
+    <div class="text">
+      Fuite de plusieurs exploits, codes, et outils d'exploitations de l'Equation Group (Groupe de cyber-espionnage de la NSA) par les Shadowbrokers. Avec notament une divulgation de l'exploit SMB EternalBlue (MS17-010) et DoublePulsar (CVE-2017-0143).
     </div>
-	
-	</div>
-  </section>
-  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-<script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+  <div class="push">
+    <a href="https://thehackernews.com/2017/04/swift-banking-hacking-tool.html" target="_blank" class="btn btn-secondary"> Article </a>
+    <a href="https://www.rapid7.com/db/modules/auxiliary/scanner/smb/smb_ms17_010#" target="_blank" class="btn btn-secondary"> Exploit Database </a>
+    <a href="https://www.cvedetails.com/cve/cve-2017-0143" target="_blank" class="btn btn-secondary"> CVE </a>
+    <a href="https://github.com/misterch0c/shadowbroker" target="_blank" class="btn btn-secondary"> Leak complet </a>
+  </div>
+  </div>
 
-    <script src="js/index.js"></script>
+<div class="event_point" id="one"></div>
+<div class="carda_droite" id="one">
+  <div class="date_droite"> 12 MAI 2017 </div>
+  <div class="titre_droite"> WannaCry Ransomware </div>
+  <div class="photo"> <img src="../images/InstallW/EternalBlue.jpg" alt="Smiley face"> </div>
+  <div class="text_droite">
+      Première infection d'une machine par le ransomware WannaCry, qui utilise une vulnérabilité du service SMB Windows comme vecteur d'infection. Le ransomware utilise les exploits DoublePulsar et EternalBlue divulgués quelques dizaines de jours plus tôt.
+  </div>
+<div class="push_droite">
+  <a href="https://blog.barkly.com/wannacry-ransomware-statistics-2017" target="_blank" class="btn btn-secondary"> Statistiques d'infections </a>
+  <a href="https://logrhythm.com/blog/a-technical-analysis-of-wannacry-ransomware/" target="_blank" class="btn btn-secondary"> Analyse technique </a>
+  <a href="https://www.csoonline.com/article/3227906/ransomware/what-is-wannacry-ransomware-how-does-it-infect-and-who-was-responsible.html" target="_blank" class="btn btn-secondary"> Article </a>
+</div>
+</div>
+
+<div class="event_point" id="two"></div>
+<div class="carda" id="two">
+  <div class="date"> 19 MAI 2017 </div>
+  <div class="titre"> EternalRocks Worm  </div>
+  <div class="photo"> <img src="../images/InstallW/EternalRocks.png" alt="Smiley face"> </div>
+  <div class="text">
+    Découverte d'un ver utilisant 7 des exploits dévoilés par les shadowbrokers pour infecter ses victimes, toujours au travers du service SMB Windows. Celui-ci est plus complexe mais moins dangereux que le ransomware WannaCry. Il s'avère au final que le ver à simplement été fait par un utilisateur ayant eu accès aux leak de la NSA, et que la charge utile du ver n'est pas malveillante, mais bloque le port SMB utilisé pour infecter la machine.
+  </div>
+<div class="push" id="two_a">
+  <a href="https://thehackernews.com/2017/05/smb-windows-hacking-tools.html" target="_blank" class="btn btn-secondary"> Article </a>
+  <a href="https://github.com/stamparm/EternalRocks" target="_blank" class="btn btn-secondary"> Sample </a>
+  <a href="https://kc.mcafee.com/resources/sites/MCAFEE/content/live/PRODUCT_DOCUMENTATION/27000/PD27113/en_US/McAfee_Labs_Threat_Advisory-EternalRocks.pdf" target="_blank" class="btn btn-secondary"> Analyse technique </a>
+  <a href="https://www.bleepingcomputer.com/news/security/author-of-eternalrocks-smb-worm-calls-it-quits-after-intense-media-coverage/" target="_blank" class="btn btn-secondary"> Article </a>
+</div>
+</div>
+
+<div class="event_point" id="trois"></div>
+<div class="carda_droite" id="trois">
+  <div class="date_droite"> 20 MAI 2017 </div>
+  <div class="titre_droite"> WannaCry Kill-Switch  </div>
+  <div class="photo"> <img src="../images/InstallW/EternalRocks.png" alt="Smiley face"> </div>
+  <div class="text_droite">
+    Après avoir étudié WannaCry en profondeur, un chercheur découvre un kill-switch permettant de freiner l'évolution du malware. Afin de contourner les différentes sandbox applicatives qu'il pourait rencontrer, le malware cherche à atteindre un certain domaine. Si le domaine n'est pas joignable, le code s'arrète imédiatement.
+  </div>
+<div class="push_droite" id="trois_a">
+  <a href="https://latesthackingnews.com/2017/05/13/wannacry-kill-switch/" target="_blank" class="btn btn-secondary"> Article </a>
+  <a href="https://github.com/stamparm/EternalRocks" target="_blank" class="btn btn-secondary"> Sample </a>
+  <a href="https://kc.mcafee.com/resources/sites/MCAFEE/content/live/PRODUCT_DOCUMENTATION/27000/PD27113/en_US/McAfee_Labs_Threat_Advisory-EternalRocks.pdf" target="_blank" class="btn btn-secondary"> Analyse technique </a>
+  <a href="https://www.bleepingcomputer.com/news/security/author-of-eternalrocks-smb-worm-calls-it-quits-after-intense-media-coverage/" target="_blank" class="btn btn-secondary"> Article </a>
+</div>
+</div>
+
+
+
+  </div>
+
+
+
+
+
 
 </body>
-</html>
