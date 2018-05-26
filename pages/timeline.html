@@ -38,7 +38,7 @@
               <a class="nav-link" href="cours1.html">Cours 1ère année </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Cours 2ème année</a>
+              <a class="nav-link" href="cours2.html">Cours 2ème année</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="stage2.html">Stage</a>
@@ -78,7 +78,7 @@
 <div class="carda_droite" id="one">
   <div class="date_droite"> 12 MAI 2017 </div>
   <div class="titre_droite"> WannaCry Ransomware </div>
-  <div class="photo"> <img src="../images/InstallW/EternalBlue.jpg" alt="Smiley face"> </div>
+  <div class="photo"> <img src="../images/InstallW/dhotel.jpg" alt="Smiley face"> </div>
   <div class="text_droite">
       Première infection d'une machine par le ransomware WannaCry, qui utilise une vulnérabilité du service SMB Windows comme vecteur d'infection. Le ransomware utilise les exploits DoublePulsar et EternalBlue divulgués quelques dizaines de jours plus tôt.
   </div>
@@ -109,19 +109,81 @@
 <div class="carda_droite" id="trois">
   <div class="date_droite"> 20 MAI 2017 </div>
   <div class="titre_droite"> WannaCry Kill-Switch  </div>
-  <div class="photo"> <img src="../images/InstallW/EternalRocks.png" alt="Smiley face"> </div>
+  <div class="photo"> <img src="../images/InstallW/wcry.png" alt="Smiley face"> </div>
   <div class="text_droite">
     Après avoir étudié WannaCry en profondeur, un chercheur découvre un kill-switch permettant de freiner l'évolution du malware. Afin de contourner les différentes sandbox applicatives qu'il pourait rencontrer, le malware cherche à atteindre un certain domaine. Si le domaine n'est pas joignable, le code s'arrète imédiatement.
   </div>
 <div class="push_droite" id="trois_a">
-  <a href="https://latesthackingnews.com/2017/05/13/wannacry-kill-switch/" target="_blank" class="btn btn-secondary"> Article </a>
-  <a href="https://github.com/stamparm/EternalRocks" target="_blank" class="btn btn-secondary"> Sample </a>
-  <a href="https://kc.mcafee.com/resources/sites/MCAFEE/content/live/PRODUCT_DOCUMENTATION/27000/PD27113/en_US/McAfee_Labs_Threat_Advisory-EternalRocks.pdf" target="_blank" class="btn btn-secondary"> Analyse technique </a>
-  <a href="https://www.bleepingcomputer.com/news/security/author-of-eternalrocks-smb-worm-calls-it-quits-after-intense-media-coverage/" target="_blank" class="btn btn-secondary"> Article </a>
+  <a href="https://www.wired.com/2017/05/accidental-kill-switch-slowed-fridays-massive-ransomware-attack/" target="_blank" class="btn btn-secondary"> Article </a>
+  <a href="https://www.malwaretech.com/2017/05/how-to-accidentally-stop-a-global-cyber-attacks.html" target="_blank" class="btn btn-secondary"> Détails </a>
+  <a href="https://twitter.com/malwaretechblog" target="_blank" class="btn btn-secondary"> MalwareTech </a>
+  <a href="https://thehackernews.com/2017/05/wannacry-ransomware-cyber-attack.html" target="_blank" class="btn btn-secondary"> Article </a>
 </div>
 </div>
 
+<div class="event_point" id="four"></div>
+<div class="carda" id="four">
+  <div class="date"> 20 JUIN 2017 </div>
+  <div class="titre"> BtcMine </div>
+  <div class="photo"> <img src="../images/InstallW/vault7.png" alt="Smiley face"> </div>
+  <div class="text">
+    Toujours en lien avec les dossiers de la NSA divulgués par les shadowbrokers, une première vague de nouveaux malwares voient le jours. Se basant une nouvelle fois sur le service SMB et l'exploit DoublePulsar, cette nouvelle géneration de malware ciblent les ressources des machines infectés, en les utilisants pour miner des cryptocurrencies (ici des Moneros).
+  </div>
+<div class="push" id="trois_a">
+  <a href="https://www.bleepingcomputer.com/news/security/nsa-malware-used-to-infect-windows-pcs-with-cryptocurrency-miner/" target="_blank" class="btn btn-secondary"> Article </a>
+  <a href="https://github.com/cystack/monero-mining-malware" target="_blank" class="btn btn-secondary"> POC </a>
+  <a href="https://www.nttsecurity.com/docs/librariesprovider3/resources/gbl_gtic-monero-mining-malware_uea.pdf" target="_blank" class="btn btn-secondary"> Détails techniques </a>
+  <a href="https://www.accenture.com/t20180322T091347Z__w__/us-en/_acnmedia/PDF-46/Accenture-Threat-Analysis-Monero-Wannamine.pdf" target="_blank" class="btn btn-secondary"> WhitePaper </a>
+</div>
+</div>
 
+<div class="event_point" id="five"></div>
+<div class="carda_droite" id="five">
+  <div class="date_droite"> 28 JUIN 2017 </div>
+  <div class="titre_droite"> <font color="black"> Vault 7 - BrutalKangaroo & ELSA </font>  </div>
+  <div class="photo"> <img src="../images/InstallW/DoublePulsar.jpg" alt="Smiley face"> </div>
+  <div class="text_droite">
+    Sous le nom "Vault7", WikiLeak publie des informations sur l'existence de deux malwares développées par la CIA : BrutalKangaroo et ELSA. Le premier permet d'infecter des ordinateurs sur des réseaux isolés (air-gapped), alors que le second permet de géolocaliser des utilisateurs via leurs connexions WiFi.
+  </div>
+<div class="push_droite" id="five_a">
+  <a href="https://www.cybereason.com/blog/blog-brutal-kangaroo-shows-even-air-gapped-networks-are-vulnerable-to-attackers" target="_blank" class="btn btn-secondary"> BrutalKangaroo </a>
+  <a href="https://thehackernews.com/2017/06/wikileaks-Brutal-Kangaroo-airgap-malware.html" target="_blank" class="btn btn-secondary"> Article </a>
+  <a href="https://wikileaks.org/vault7/document/Elsa_User_Manual/" target="_blank" class="btn btn-secondary"> ELSA </a>
+  <a href="https://thehackernews.com/2017/06/wikileaks-cia-malware-geolocation.html" target="_blank" class="btn btn-secondary"> Article </a>
+</div>
+</div>
+
+<div class="event_point" id="six"></div>
+<div class="carda" id="six">
+  <div class="date"> 21 JUIL 2017 </div>
+  <div class="titre"> DarkHotel Malware Campaign </div>
+  <div class="photo"> <img src="../images/InstallW/EternalBlue.jpg" alt="Smiley face"> </div>
+  <div class="text">
+    Nouveau malware érit par le groupe "DarkHotel" ciblant principalement des personnalités politiques. Le code malveillant est déployé via une campagne de phishing par mail. Les mails incitent l'utilisateur à ouvrir une pièce jointe contenant une archive RAR SFX (auto-extratction). Celle-ci installe ensuite une APT-like (Advanced Persistent Threat) sur la machine, qui va exfiltrer des informations vers un server C&C.
+  </div>
+<div class="push" id="six_a">
+  <a href="https://www.bleepingcomputer.com/news/security/nsa-malware-used-to-infect-windows-pcs-with-cryptocurrency-miner/" target="_blank" class="btn btn-secondary"> Article </a>
+  <a href="https://github.com/cystack/monero-mining-malware" target="_blank" class="btn btn-secondary"> POC </a>
+  <a href="https://www.nttsecurity.com/docs/librariesprovider3/resources/gbl_gtic-monero-mining-malware_uea.pdf" target="_blank" class="btn btn-secondary"> Détails techniques </a>
+  <a href="https://www.accenture.com/t20180322T091347Z__w__/us-en/_acnmedia/PDF-46/Accenture-Threat-Analysis-Monero-Wannamine.pdf" target="_blank" class="btn btn-secondary"> WhitePaper </a>
+</div>
+</div>
+
+<div class="event_point" id="seven"></div>
+<div class="carda_droite" id="seven">
+  <div class="date_droite"> 13 SEPT 2017 </div>
+  <div class="titre_droite"> RouteX Malware </div>
+  <div class="photo"> <img src="../images/InstallW/routex.png" alt="Smiley face"> </div>
+  <div class="text_droite">
+    Nommé "RouteX", ce nouveau malware exploite une vulnerabilité (CVE-2016-10176) sur les routeurs Netgear afin de les transformer en serveur proxy SOCKS. Depuis les routeurs infectés, l'auteur du malware test des combos d'identifiants fuités sur plusieurs services online, dans le but de compromettre des comptes utilisateurs.
+  </div>
+<div class="push_droite" id="seven_a">
+  <a href="https://www.trendmicro.com/vinfo/us/security/news/internet-of-things/routex-malware-found-exploiting-remote-access-vulnerability-in-netgear-routers" target="_blank" class="btn btn-secondary"> Article </a>
+  <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10176" target="_blank" class="btn btn-secondary"> CVE </a>
+  <a href="https://www.owasp.org/index.php/Credential_stuffing" target="_blank" class="btn btn-secondary"> Crendential stuffing </a>
+  <a href="https://www.bleepingcomputer.com/news/security/routex-malware-uses-netgear-routers-for-credential-stuffing-attacks/" target="_blank" class="btn btn-secondary"> Article </a>
+</div>
+</div>
 
   </div>
 
