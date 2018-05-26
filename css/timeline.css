@@ -9,25 +9,18 @@
   margin-bottom: 70px;
 }
 
-#one{
-  margin-top: 270px;
-}
-
-#two{
-  margin-top: 440px;
-}
-
-#two_a{
-  margin-top: 170px;
-}
-
-#trois{
-  margin-top: 640px;
-}
-
-#trois_a{
-  margin-top: 130px;
-}
+#one{margin-top: 270px;}
+#two{margin-top: 440px;}
+#two_a{margin-top: 170px;}
+#trois{margin-top: 640px;}
+#trois_a{margin-top: 145px;}
+#four{margin-top: 870px;}
+#five{margin-top: 1000px;}
+#five_a{margin-top: 120px;}
+#six{margin-top: 1280px;}
+#six_a{margin-top: 172px;}
+#seven{margin-top: 1370px;}
+#seven_a{margin-top: 142px;}
 
 .event_point{
   position: absolute;
