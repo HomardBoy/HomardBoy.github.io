@@ -4,9 +4,15 @@
   width: 3px;
   margin-left: 50%;
   background-color: grey;
-  margin-top: 70px;
+  margin-top: 22px;
   border-radius: 5px;
   margin-bottom: 70px;
+}
+
+.months{
+  position: fixed;
+  margin-left: 10px;
+  margin-top: -25px;
 }
 
 #one{margin-top: 270px;}
@@ -15,14 +21,27 @@
 #trois{margin-top: 640px;}
 #trois_a{margin-top: 145px;}
 #four{margin-top: 870px;}
-#five{margin-top: 1000px;}
+#five{margin-top: 1020px;}
 #five_a{margin-top: 120px;}
 #six{margin-top: 1280px;}
 #six_a{margin-top: 172px;}
-#seven{margin-top: 1370px;}
+#seven{margin-top: 1400px;}
 #seven_a{margin-top: 142px;}
-#huit{margin-top: 1690px;}
+#huit{margin-top: 1700px;}
 #huit_a{margin-top: 135px;}
+#neuf{margin-top: 1800px;}
+#neuf_a{margin-top: 123px;}
+#ten{margin-top: 2120px;}
+#ten_a{margin-top: 140px;}
+#eleven{margin-top: 2170px;}
+#eleven_a{margin-top: 140px;}
+#douze{margin-top: 2538px;}
+#douze_a{margin-top: 188px;}
+
+.annee{
+  text-align: center;
+  font-size: 30px;
+}
 
 .event_point{
   position: absolute;
