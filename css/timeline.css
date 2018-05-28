@@ -1,6 +1,6 @@
 .timeline{
   position: relative;
-  height: 2000px;
+  height: 3000px;
   width: 3px;
   margin-left: 50%;
   background-color: grey;
@@ -21,6 +21,8 @@
 #six_a{margin-top: 172px;}
 #seven{margin-top: 1370px;}
 #seven_a{margin-top: 142px;}
+#huit{margin-top: 1690px;}
+#huit_a{margin-top: 135px;}
 
 .event_point{
   position: absolute;
