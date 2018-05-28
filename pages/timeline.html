@@ -11,6 +11,24 @@
 
 </head>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 865, function(){
+        window.location.hash = has
+      });
+    }
+  });
+});
+</script>
+
   <style>
     #content > div {
       background-color: #f2f6fc;
@@ -35,7 +53,7 @@
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="post">
               <a class="nav-link" href="cours1.html">Cours 1ère année </a>
             </li>
             <li class="nav-item">
@@ -58,7 +76,30 @@
       </div>
     </nav>
 
-<div class="timeline">
+<div class="annee" id="zero"> 2017
+</div>
+
+<div class="months">
+<ul type="disc">
+  <li><b><a href="#zero">2017</a></b></li>
+  <li><a href="#zero">Avril</a></li>
+  <li><a href="#zero_b">Mai</a></li>
+  <li><a href="#trois">Juin</a></li>
+  <li><a href="#four">Juillet</a></li>
+  <li><a href="#six">Septembre</a></li>
+  <li><a href="#seven">Octobre</a></li>
+  <li><a href="#huit">Novembre</a></li>
+  <li><a href="#douze">Décembre</a></li>
+  <li><b><a href="#zero">2018</a></b></li>
+  <li><a href="#zero">Janvier</a></li>
+  <li><a href="#zero">Février</a></li>
+  <li><a href="#zero">Mars</a></li>
+  <li><a href="#zero">Avril</a></li>
+  <li><a href="#zero_b">Mai</a></li>
+</ul>
+</div>
+
+<div class="timeline" id="zero_b">
   <div class="event_point"></div>
   <div class="carda">
     <div class="date"> 14 Avril 2017 </div>
@@ -202,12 +243,72 @@
 </div>
 </div>
 
+<div class="event_point" id="neuf"></div>
+<div class="carda_droite" id="neuf">
+  <div class="date_droite"> 24 OCT 2017 </div>
+  <div class="titre_droite"> </black></div>
+  <div class="photo"> <img src="../images/InstallW/Badr.jpg" alt="Smiley face"> </div>
+  <div class="text_droite">
+    Découverte d'un nouveau ransomware nomé "BadRabbit" touchant principalement des administrations et entreprises privées des pays d'Europe de l'Est. Le ransomware se répend via une fausse mise à jour Flash, avant d'infecter laterallement d'autres machines via un kit d'exploits.
+  </div>
+<div class="push_droite" id="neuf_a">
+  <a href="https://thehackernews.com/2017/10/bad-rabbit-ransomware-attack.html" target="_blank" class="btn btn-secondary"> Article </a>
+  <a href="https://logrhythm.com/blog/bad-rabbit-ransomware-technical-analysis/" target="_blank" class="btn btn-secondary"> Analyse technique </a>
+  <a href="https://securitycommunity.tcs.com/infosecsoapbox/content/bad-rabbit-ransomeware-cve-2017-0145" target="_blank" class="btn btn-secondary"> CVE </a>
+  <a href="https://thehackernews.com/2017/10/bad-rabbit-ransomware.html" target="_blank" class="btn btn-secondary"> Article </a>
+</div>
+</div>
 
+<div class="event_point" id="ten"></div>
+<div class="carda" id="ten">
+  <div class="date"> 09 NOV 2017 </div>
+  <div class="titre"> <font color="black"> Hive C&C Server </black> </div>
+  <div class="photo"> <img src="../images/InstallW/hive.png" alt="Smiley face"> </div>
+  <div class="text">
+    Leak du projet "Hive" de la CIA : un des composants principale du back-end de contrôle à distance des malwares développés par l'agence. Le projet Hive permet à des opérateurs distants d'interragir avec différents malwares dans le cadre d'opérations diverses. L'infrastructure complexe de Hive en fait un sujet d'étude très interessant.
+  </div>
+<div class="push_droite" id="ten_a">
+  <a href="https://thehackernews.com/2017/11/cia-hive-malware-code.html" target="_blank" class="btn btn-secondary"> Article </a>
+  <a href="https://wikileaks.org/ciav7p1/cms/page_7995396.html" target="_blank" class="btn btn-secondary"> Architecture </a>
+  <a href="https://github.com/infoskirmish/hive" target="_blank" class="btn btn-secondary"> Code source </a>
+  <a href="https://www.bleepingcomputer.com/news/government/wikileaks-releases-source-code-of-cia-cyber-weapon/" target="_blank" class="btn btn-secondary"> Article </a>
+</div>
+</div>
+
+<div class="event_point" id="eleven"></div>
+<div class="carda_droite" id="eleven">
+  <div class="date_droite"> 23 NOV 2017 </div>
+  <div class="titre_droite"></div>
+  <div class="photo"> <img src="../images/InstallW/Scarab.png" alt="Smiley face"> </div>
+  <div class="text_droite">
+    Déploiement du ransomware Scarab via Necurs, le plus vaste botnet de spam mondial. Les mails malveillant contiennent ce qui s'apparente à un scan de document, qui s'avère en fait contenir une archive Zip, contenant elle-même un script Visual Basic téléchargeant et exécutant l'actuel ransomware. Le ransomware est inédit de part son code écrit en Delphi.
+  </div>
+<div class="push_droite" id="eleven_a">
+  <a href="https://thehackernews.com/2017/11/cia-hive-malware-code.html" target="_blank" class="btn btn-secondary"> Article </a>
+  <a href="https://blog.malwarebytes.com/threat-analysis/2018/01/scarab-ransomware-new-variant-changes-tactics/" target="_blank" class="btn btn-secondary"> Analyse technique </a>
+  <a href="https://blogs.forcepoint.com/security-labs/massive-email-campaign-spreads-scarab-ransomware" target="_blank" class="btn btn-secondary"> Article </a>
+  <a href="https://www.bleepingcomputer.com/news/security/scarab-ransomware-pushed-via-massive-spam-campaign/" target="_blank" class="btn btn-secondary"> Article </a>
+</div>
+</div>
+
+  <div class="event_point" id="douze"></div>
+  <div class="carda" id="douze">
+    <div class="date"> 04 DEC 2017 </div>
+    <div class="titre">  </div>
+    <div class="photo"> <img src="../images/InstallW/Andromeda.jpg" alt="Smiley face"> </div>
+    <div class="text">
+      Andromeda est le nom du Botnet contenant les machines infectées par le malware "Eponymous". S'étallant sur 233 pays, ce botnet croit de 5 a 6 millions de nouveaux bots par mois. A la suite d'une vaste opération du FBI, Europol (E3C), Eurojust, la Cybercrime Action Task Force (J-CAT) et des acteurs privés (l'ICANN, Microsoft, ESET, etc ...) le botnet à enfin été coupé. Les 460 plus petits réseaux de machines composants le botnet Andromeda ont tous été désolidarisées de leurs serveurs de contrôle. L'auteur du malware à été arrêté.
+    </div>
+  <div class="push_droite" id="douze_a">
+    <a href="https://www.europol.europa.eu/newsroom/news/andromeda-botnet-dismantled-in-international-cyber-operation" target="_blank" class="btn btn-secondary"> Article </a>
+    <a href="http://blog.shadowserver.org/2017/12/04/avalanche-year-two-this-time-with-andromeda/" target="_blank" class="btn btn-secondary"> Rapport </a>
+    <a href="https://resources.infosecinstitute.com/andromeda-bot-analysis/#gref" target="_blank" class="btn btn-secondary"> Analyse technique </a>
+    <a href="https://www.bleepingcomputer.com/news/security/world-police-shut-down-andromeda-gamarue-botnet/" target="_blank" class="btn btn-secondary"> Article </a>
+  </div>
   </div>
 
 
-
-
+  </div>
 
 
 </body>
