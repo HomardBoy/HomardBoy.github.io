@@ -89,9 +89,9 @@ $(document).ready(function(){
   <li><a href="#six">Septembre</a></li>
   <li><a href="#seven">Octobre</a></li>
   <li><a href="#huit">Novembre</a></li>
-  <li><a href="#douze">Décembre</a></li>
-  <li><b><a href="#zero">2018</a></b></li>
-  <li><a href="#zero">Janvier</a></li>
+  <li><a href="#ten">Décembre</a></li>
+  <li><b><a href="#ten">2018</a></b></li>
+  <li><a href="#janv2018">Janvier</a></li>
   <li><a href="#zero">Février</a></li>
   <li><a href="#zero">Mars</a></li>
   <li><a href="#zero">Avril</a></li>
@@ -306,6 +306,85 @@ $(document).ready(function(){
     <a href="https://www.bleepingcomputer.com/news/security/world-police-shut-down-andromeda-gamarue-botnet/" target="_blank" class="btn btn-secondary"> Article </a>
   </div>
   </div>
+
+  <div class="event_point" id="janv2018"></div>
+  <div class="carda_droite" id="janv2018">
+    <div class="date_droite"> 04 JAN 2018 </div>
+    <div class="titre_droite">  </div>
+    <div class="photo"> <img src="../images/InstallW/spectre.png" alt="Smiley face"> </div>
+    <div class="text_droite">
+      Découverte de deux sévères failles par canaux auxiliaires sur les CPU : Spectre et Meltdown. Les deux attaques permettent de faire fuiter des informations mémoires. Meldown permet à un processus utilisateur non privilégié d'avoir accès à des données du noyau. Spectre permet quand à lui d'extraire des données mémoires relatives à d'autres applications (exemple : voler les cookies utilisateur du naviguateur à partir d'un code JS malveillant).
+    </div>
+  <div class="push_droite" id="janv2018_a">
+    <a href="https://googleprojectzero.blogspot.fr/2018/01/reading-privileged-memory-with-side.html" target="_blank" class="btn btn-secondary"> Détails techniques </a>
+    <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753" target="_blank" class="btn btn-secondary"> CVE </a>
+    <a href="https://blog.rapid7.com/2018/01/04/meltdown-and-spectre-what-you-need-to-know-cve-2017-5715-cve-2017-5753-cve-2017-5754/" target="_blank" class="btn btn-secondary"> Article </a>
+    <a href="https://meltdownattack.com/" target="_blank" class="btn btn-secondary"> Analyse </a>
+  </div>
+  </div>
+
+<div class="event_point" id="janv2018_b"></div>
+<div class="carda" id="janv2018_b">
+  <div class="date"> 11 JAN 2018 </div>
+  <div class="titre"> <font color="black"> Kotlin Malware </black>  </div>
+  <div class="photo"> <img src="../images/InstallW/kotlin.png" alt="Smiley face"> </div>
+  <div class="text">
+    Découverte du premier malware écrit en Kotlin, un langage de programmation interopérable avec les bibliothèques Android. Le malware est caché dans une application android légitime appelée "Swift Cleaner". Le malware clique automatiquement sur des publicités, permet d'exécuter des commandes à distance et d'usurper le numéro de téléphone de l'appareil pour s'abonner à des services payants.
+  </div>
+<div class="push" id="janv2018_a">
+  <a href="https://www.bleepingcomputer.com/news/security/first-android-malware-developed-in-kotlin-programming-language-discovered/" target="_blank" class="btn btn-secondary"> Article </a>
+  <a href="https://www.bleepingcomputer.com/news/mobile/kotlin-expected-to-surpass-java-as-android-default-programming-language-for-apps/" target="_blank" class="btn btn-secondary"> Kotlin </a>
+  <a href="https://blog.trendmicro.com/trendlabs-security-intelligence/first-kotlin-developed-malicious-app-signs-users-premium-sms-services/" target="_blank" class="btn btn-secondary"> Détails techniques </a>
+  <a href="https://blog.trendmicro.com/trendlabs-security-intelligence/new-mobile-malware-uses-layered-obfuscation-targets-russian-banks/" target="_blank" class="btn btn-secondary"> Article </a>
+</div>
+</div>
+
+<div class="carda_droite" id="janv2018_b">
+  <div class="date_droite"> 12 FEV 2018 </div>
+  <div class="titre_droite"> <font color="white"> Olympic Destroyer Malware </font> </div>
+  <div class="photo"> <img src="../images/InstallW/olympicd.jpg" alt="Smiley face"> </div>
+  <div class="text_droite">
+    Nouveau malware "Olympic Destroyer". D'après les rapport, celui-ci est à l'origine de nombreuses pannes informatiques coordonées raportées au moment de la cérémonie d'ouverture des JO d'hiver 2018 à PyeongChang. Le malware à pour unique but rendre inutilisable les machines sur lesquelles il est déployé, et de se déployer laterallement via un kit d'exploit intégrés.
+  </div>
+<div class="push_droite" id="janv2018_c">
+  <a href="https://www.bleepingcomputer.com/news/security/olympic-destroyer-data-wiping-malware-is-more-complex-than-previously-thought/" target="_blank" class="btn btn-secondary"> Article </a>
+  <a href="https://threatpost.com/olympic-destroyer-a-false-flag-confusion-bomb/130262/" target="_blank" class="btn btn-secondary"> Analyse </a>
+  <a href="https://blog.talosintelligence.com/2018/02/olympic-destroyer.html" target="_blank" class="btn btn-secondary"> Détails techniques </a>
+  <a href="https://www.bleepingcomputer.com/news/security/destructive-malware-wreaks-havoc-at-pyeongchang-2018-winter-olympics/" target="_blank" class="btn btn-secondary"> Article </a>
+</div>
+</div>
+
+<div class="event_point" id="mars2018"></div>
+<div class="carda_droite" id="mars2018">
+  <div class="date_droite"> 5 MARS 2018 </div>
+  <div class="titre_droite"> <font color="black"> </font> </div>
+  <div class="photo"> <img src="../images/InstallW/combojack.png" alt="Smiley face"> </div>
+  <div class="text_droite">
+    Des chercheurs en sécurité ont découverts un nouveau malware "ComboJack", qui détecte lorsqu'un utilisateur copie une adresse de porte monnaie de crypto-monnaies, afin de remplacer cette adresse par celle du créteur du malware. L'infection se fait via un e-mail infecté par un fichier PDF malicieux.
+  </div>
+<div class="push_droite" id="mars2018_a">
+  <a href="https://researchcenter.paloaltonetworks.com/2018/03/unit42-sure-ill-take-new-combojack-malware-alters-clipboards-steal-cryptocurrency/" target="_blank" class="btn btn-secondary"> Article </a>
+  <a href="https://blog.cyberbyte.org/blog/combojack-trojan-replaces-cryptocurrency-addresses-copied-to-windows-clipboard/" target="_blank" class="btn btn-secondary"> Article </a>
+  <a href="https://www.disruptordaily.com/new-cryptocurrency-malware-combojack-changes-wallet-addresses-you-copy-paste/" target="_blank" class="btn btn-secondary"> Détails techniques </a>
+  <a href="https://www.bleepingcomputer.com/news/security/combojack-trojan-replaces-cryptocurrency-addresses-copied-to-windows-clipboard/" target="_blank" class="btn btn-secondary"> Article </a>
+</div>
+</div>
+
+<div class="event_point" id="mars2018_b"></div>
+<div class="carda" id="mars2018_b">
+  <div class="date"> 30 MARS 2018 </div>
+  <div class="titre"> <font color="white"> AutoHotKey Malware </font> </div>
+  <div class="photo"> <img src="../images/InstallW/auto.png" alt="Smiley face"> </div>
+  <div class="text">
+    Émergeance de nouveaux malwares écrits avec le language de programmation AutoHotKey (AHK). AHK est un language de programamtion open-source développés pour les systèmes Microsoft. Initialement, le language permet de mapper virtuellement les touches du clavier utilisateur.
+  </div>
+<div class="push" id="mars2018_a">
+  <a href="https://researchcenter.paloaltonetworks.com/2018/03/unit42-sure-ill-take-new-combojack-malware-alters-clipboards-steal-cryptocurrency/" target="_blank" class="btn btn-secondary"> Article </a>
+  <a href="https://blog.cyberbyte.org/blog/combojack-trojan-replaces-cryptocurrency-addresses-copied-to-windows-clipboard/" target="_blank" class="btn btn-secondary"> Article </a>
+  <a href="https://www.disruptordaily.com/new-cryptocurrency-malware-combojack-changes-wallet-addresses-you-copy-paste/" target="_blank" class="btn btn-secondary"> Détails techniques </a>
+  <a href="https://www.bleepingcomputer.com/news/security/combojack-trojan-replaces-cryptocurrency-addresses-copied-to-windows-clipboard/" target="_blank" class="btn btn-secondary"> Article </a>
+</div>
+</div>
 
 
   </div>
